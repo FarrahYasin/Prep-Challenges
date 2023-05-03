@@ -28,6 +28,24 @@
 
 const customerAndAge = (obj) => {
   // write your code here
+exercise08
+
+  
+  let valuesArray = [];
+  for (const key in obj) {
+    valuesArray.push(`Customer Name :${key} , Age :${obj[key]}`);
+  }
+return valuesArray;
+// let arr2 = [];
+// for(let i = 0; i < arr.length; i++){
+    
+//    let x= [
+//         names= arr[i].names + " ",
+//         age= arr[i].age
+//    ]
+
+// }
+=======
   let arrOfCustomer=[];
   let name;
   let age;
@@ -35,6 +53,7 @@ const customerAndAge = (obj) => {
     age=obj[name];
     arrOfCustomer.push(`Customer Name :${name} , Age :${age}`)
   }return arrOfCustomer;
+ main
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -61,22 +80,7 @@ const customerAndAge = (obj) => {
 
 const getEntries = (obj) => {
   // write your code here
-    // let arr = [];
-    // for (let i in obj) {
-    //   // for (let j in obj[i]) {
-    //     arr.push(obj[i]);
-    //   }
 
-    // }
-    // return arr;
-  
-//  let arr2 =[];
- 
-//   for(let i=0;i<obj.length;i++){
-
-//   }
-//   return arr2;
-    //  arr2.push("name: " + name + "ingredients: " + arr2 + "cookTime: " + name + "price: " + name)
 };
 // -------------------------------------------------------------------------------------------------------
 
