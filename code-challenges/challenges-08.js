@@ -28,13 +28,22 @@
 
 const customerAndAge = (obj) => {
   // write your code here
-  let arrOfCustomer=[];
-  let name;
-  let age;
-  for(name in obj){
-    age=obj[name];
-    arrOfCustomer.push(`Customer Name :${name} , Age :${age}`)
-  }return arrOfCustomer;
+
+  
+  let valuesArray = [];
+  for (const key in obj) {
+    valuesArray.push(obj[key]);
+  }
+
+let arr2 = [];
+for(let i = 0; i < arr.length; i++){
+    
+   let x= [
+        names= arr[i].names + " ",
+        age= arr[i].age
+   ]
+
+}
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -61,22 +70,9 @@ const customerAndAge = (obj) => {
 
 const getEntries = (obj) => {
   // write your code here
-    // let arr = [];
-    // for (let i in obj) {
-    //   // for (let j in obj[i]) {
-    //     arr.push(obj[i]);
-    //   }
 
-    // }
-    // return arr;
+
   
-//  let arr2 =[];
- 
-//   for(let i=0;i<obj.length;i++){
-
-//   }
-//   return arr2;
-    //  arr2.push("name: " + name + "ingredients: " + arr2 + "cookTime: " + name + "price: " + name)
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -119,8 +115,17 @@ const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
   // write your code here
+  for(let i=0;i<courses.length;i++){
+  coursesName.push(courses[i].course);
+  }
+
+  for(let i=0;i<courses.length;i++){
+  studentsName.push(courses[i].Students);
+  }
+
 
   return { coursesName, studentsName };
+
 };
 // -------------------------------------------------------------------------------------------------------
 
