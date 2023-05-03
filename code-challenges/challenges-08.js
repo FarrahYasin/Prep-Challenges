@@ -28,6 +28,7 @@
 
 const customerAndAge = (obj) => {
   // write your code here
+exercise08
 
   
   let valuesArray = [];
@@ -44,6 +45,15 @@ return valuesArray;
 //    ]
 
 // }
+=======
+  let arrOfCustomer=[];
+  let name;
+  let age;
+  for(name in obj){
+    age=obj[name];
+    arrOfCustomer.push(`Customer Name :${name} , Age :${age}`)
+  }return arrOfCustomer;
+ main
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -70,10 +80,7 @@ return valuesArray;
 
 const getEntries = (obj) => {
   // write your code here
-  const arrayy = [];
-  for(let [key, value] of Object.entries(obj))
-  arrayy.push(`${key}: ${value}`)
-  return arrayy;
+
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -116,17 +123,8 @@ const getInfo = (arr) => {
   let coursesName = [];
   let studentsName = [];
   // write your code here
-  for(let i=0;i<courses.length;i++){
-  coursesName.push(courses[i].course);
-  }
-
-  for(let i=0;i<courses.length;i++){
-  studentsName.push(courses[i].Students);
-  }
-
 
   return { coursesName, studentsName };
-
 };
 // -------------------------------------------------------------------------------------------------------
 
