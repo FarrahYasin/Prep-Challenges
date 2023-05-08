@@ -19,6 +19,17 @@ const reverseString = (string) => {
         newString += string[i]; 
     }
     return newString;
+    const rev= string.split("")
+    let arr=[]
+      for ( let i=0; i< rev.length ;i++){
+        let newLatter=rev.length-i-1
+
+          arr.push(rev[newLatter]) 
+
+      }
+      return arr.join('')
+
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -39,6 +50,13 @@ const detectFace = (arr) => {
         var found = arr.find(element => element == "^_^" );
     }//
 return found;
+    let faceArray = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (/\^_\^/g.test(arr[i]) === true) {
+            faceArray.push(arr[i])
+        }
+    }
+    return faceArray;
 }
 // -------------------------------------------------------------------------------------------------------
 
