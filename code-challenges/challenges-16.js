@@ -14,6 +14,11 @@
 
 const reverseString = (string) => {
     //write your code here ...
+     let newString = "";
+    for (var i = string.length - 1; i >= 0; i--) { 
+        newString += string[i]; 
+    }
+    return newString;
     const rev= string.split("")
     let arr=[]
       for ( let i=0; i< rev.length ;i++){
@@ -41,6 +46,10 @@ const reverseString = (string) => {
 
 const detectFace = (arr) => {
     //write your code here ...
+    for (var i = 0; i < arr.length; i++) { 
+        var found = arr.find(element => element == "^_^" );
+    }//
+return found;
     let faceArray = [];
     for (let i = 0; i < arr.length; i++) {
         if (/\^_\^/g.test(arr[i]) === true) {
