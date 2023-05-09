@@ -19,7 +19,9 @@
 
 const oddFiltration = (arr) => {
     // write your code here
-return arr.filter(num=>num%2==1)
+    return arr.filter(num=>num%2==1)
+
+
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -72,30 +74,19 @@ return arr.filter(num=>num%2==1)
 
 const cvsFiltration = (arr) => {
     // write your code here
+    return arr.filter(item => item.yearsOfExperience > 4 && item.tech === "JS")
+     .map(item => {
+         let fullName = "";
+        if (item.firstName && item.LastName) {
+            fullName += item.firstName;
+            fullName += " " + item.LastName;
+          }
+          else if (item.LastName)
+              fullName = item.LastName;
+
+        return {fullName, tech: item.tech};
+    });
    
-let arr2 = [];
-for(let i = 0; i < arr.length; i++){
-    if(arr[i].tech=='JS' && arr[i].LastName !== null){
-   let x= {
-        fullName: arr[i].firstName + " " + arr[i].LastName,
-        tech: arr[i].tech
-    }
-    arr2.push(x);
-}
-let y=  {fullName: "Aaron" + " " + "William",
-tech: arr[i].tech,   
-}
-
-if(arr[i].tech=='JS' && arr[i].LastName == null){
-      arr2.push({
-        fullName: arr[i].firstName,
-         tech: arr[i].tech,   
-        })
-    }
-}   
-  return arr2
-
-
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -112,9 +103,9 @@ if(arr[i].tech=='JS' && arr[i].LastName == null){
 const vowelsFiltration = (arr) => {
     // write your code here
     return arr.filter((vow) => {
-                                return !/[ueioa]/ig.test(vow);
-                            }
-                      );
+        return !/[ueioa]/ig.test(vow);
+           }
+        );
 }
 // -------------------------------------------------------------------------------------------------------
 
